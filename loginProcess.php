@@ -13,7 +13,7 @@
 		<?php
 			/* validation e.g. to trim empty space or check input exists*/
 			$username = filter_has_var(INPUT_POST, 'username') ? $_POST['username']: null;
-			$username = trim($username);
+			$username = trim($username); //Fucking put some sanitisation!!!!!!!!!!!!!!!!!
 			$password = filter_has_var(INPUT_POST, 'password') ? $_POST['password']: null;
 			$password = trim($password);
 			
