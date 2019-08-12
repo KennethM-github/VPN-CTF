@@ -1,6 +1,6 @@
 <?php
 	/* establish session */
-	ini_set("session.save_path", "/home/unn_w17006002/sessionData");
+	ini_set("session.save_path", "/home/VPN-CTF/sessionData");
 	session_start();
 	?>
 <!doctype html>
@@ -11,16 +11,23 @@
 	</head>
 	<body>
 		<?php
-			/* validation e.g. to trim empty space or check input exists*/
+			/* validation */
+			// trim() used to strip whitespace from the beginning and end of username and password fields
+			// filter_has_var() used to check if variable of specified type exists
+			// filter_var used to filter a variable with filter to sanitize input
+
+			strlen($username); // return string legnth
 			$username = filter_has_var(INPUT_POST, 'username') ? $_POST['username']: null;
-			$username = trim($username); //Fucking put some sanitisation!!!!!!!!!!!!!!!!!
+			$username = trim($username);
+			$username = filter_var($username, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES, FILTER_SANITIZE_SPECIAL_CHARS);
 			$password = filter_has_var(INPUT_POST, 'password') ? $_POST['password']: null;
 			$password = trim($password);
-			
+			$password = filter_var($password, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES, FILTER_SANITIZE_SPECIAL_CHARS);
+	
 			if (empty($username) || empty($password)) {
 			    echo "<p>You need to provide a username and password. Please try <a href='loginForm.html'>again</a></p>\n";
 			}
-			else {
+						else {
 			    try {
 			        // clear any session setting that might be left from a previous session
 			        unset($_SESSION['username']);
@@ -29,7 +36,7 @@
 			        require_once("functions.php");
 			        $dbConn = getConnection();
 			
-			        $querySQL = "SELECT passwordHash FROM nmc_users WHERE username = :username";
+			        $querySQL = "SELECT passwordHash FROM vpnctf_users WHERE username = :username";
 			        $stmt = $dbConn->prepare($querySQL);
 			        $stmt->execute(array(':username' => $username));
 			        $user = $stmt->fetchObject();
