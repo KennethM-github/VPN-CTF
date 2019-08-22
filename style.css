@@ -1,0 +1,583 @@
+/* Code for Body */
+
+
+/* Sets default font to arial, and if this is not stored on users PC helvetica or sans-serif will be used */
+
+
+/* Defines default text colour as black and background colour as white for whole site unless this is overwritten below */
+
+body {
+	font-family: arial, helvetica, sans-serif;
+	color: #000000;
+	background-color: #f1f1f1;
+}
+
+
+/* Code for Main */
+
+
+/* Sets width of main to 65% of page and floats main to the left of page */
+
+main {
+	width: 65%;
+	float: left;
+}
+
+
+/* Code for Aside */
+
+
+/* Sets width of aside to 30% of page and floats aside to the right of page*/
+
+aside {
+	width: 30%;
+	float: right;
+}
+
+
+/* Defines styles for all section tags within the aside section of the site */
+
+
+/* Sets margins for the section, aligns text to left. Sets the background colour of the section to white with black text. 10px Padding to ensure content is readable. Sets letter spacing and line height */
+
+aside section {
+	margin-left: 0px;
+	margin-top: 20px;
+	max-width: 100%;
+	text-align: left;
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 10px;
+	position: relative;
+	letter-spacing: 1.5px;
+	line-height: 1.5em;
+}
+
+
+/* Defines styles for lists within a section within an aside to have a bottom margin of 20px so that paragraphs of text have a line break */
+
+aside section li {
+	margin-bottom: 20px;
+}
+
+
+/* Code for p */
+
+
+/* Sets the default letter spacing to 1.5px and line height to 1.5em for all p text to ensure all text is readable/accesible unless otherwise spesified */
+
+p {
+	letter-spacing: 1.5px;
+	line-height: 1.5em;
+}
+
+
+/* Code for li */
+
+
+/* Sets the default letter spacing to 1.5px and line height to 1.5em for all list content to ensure all text is readable/accesible unless otherwise spesified */
+
+li {
+	letter-spacing: 1.5px;
+	line-height: 1.5em;
+}
+
+
+/* Code for Footer */
+
+
+/* Sets margin of 20px and padding of 25px to ensure Footer is clear at the of the page and not attached to above content with text positioned in the center of the footer. */
+
+
+/* Aligns text within the footer to the center and sets the background colour to light blue in order to follow a house style/ensure consistancy */
+
+
+/* Sets clear to both so that the footer is displayed at the very bottom of the page, under all other content */
+
+footer {
+	margin: 20px;
+	padding: 25px;
+	text-align: center;
+	background-color: #3F637E;
+	clear: both;
+}
+
+
+/* Defines stypes for paragraph text within a footer */
+
+
+/* Sets text colour to white with a font size of 16px, removes all text decoration (i.e bold, underline, italics etc.) */
+
+
+/* Sets padding and margin for footer text, so that the background of footer is not to small */
+
+footer p {
+	color: #ffffff;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 0 10px;
+	margin: 0 10px;
+}
+
+
+/* Code for Header */
+
+
+/* Creates a class for the top of header, to include a page title */
+
+
+/* Sets width to 100% to fill whole screen. Sets height of class to 5em so that text does not overlap. Vertical align of middle and line height 200% to set size of class. Display in-line block so text does not jump/float to top */
+
+
+/* Sets background colour to dark blue and text to white to follow a consistent colour scheme. Font size of 24px to ensure title text within top header is clearly visible */
+
+.top-header {
+	width: 100%;
+	height: 5em;
+	background-color: #264B67;
+	color: #FFFFFF;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 200%;
+	letter-spacing: 1.5px;
+	font-size: 24px;
+	display: inline-block;
+}
+
+
+/* Code for Nav */
+
+
+/* Centers text. Sets letter spacing to 1.5px and text line height to 1.5em. Sets font size of 17.5px (larger than standard p text) so navigaiton links stand out */
+
+nav {
+	text-align: center;
+	letter-spacing: 1.5px;
+	line-height: 1.5em;
+	font-size: 17.5px;
+}
+
+
+/* Defines styles for ul within nav tag*/
+
+
+/* Removes margin and padding. Sets background colour to light blue to ensure a consistent themes */
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #3F637E;
+}
+
+
+/* Defines styles for li within a nav tag */
+
+
+/* Displays lists in nav as an inline-block so navigation links appear in a row as opposed to a colunm */
+
+nav li {
+	display: inline-block;
+}
+
+
+/* Defines styles for a within a li within a nav tag */
+
+
+/* Sets text colour to white and centers link/navigation text. No text decotration to remove underline effect on a/href links */
+
+
+/* Sets padding top to 20px and width to 25px so that there is space between navigation links*/
+
+nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 20px 25px;
+	text-decoration: none;
+}
+
+
+/* Changes the background colour to dark blue once a link/list item is hoverd over within a nav tag */
+
+nav li a:hover {
+	background-color: #264B67;
+}
+
+
+/* Code for Banner */
+
+
+/* Sets the background picture */
+
+
+/* No-repeat and size of 'cover' so the picture fills the screen width as opposed to being tiled */
+
+
+/* Minimun banner height set to 470px as opposed to image default */
+
+.banner {
+	background: url(img/bg.jpeg)no-repeat 0px 0px;
+	background-size: cover;
+	min-height: 470px;
+}
+
+
+/* Defines h2 within banner class*/
+
+
+/* Removes margin, sets padding to 5% so that the heading is floated towards the top left but has some space for readability */
+
+
+/* Font size 30px to ensure heading is clearly visable, letter spacing of 1.5px and 2.0em line height increases space between letters so text is easy to read. Text colour set to white */
+
+.banner h2 {
+	margin: 0%;
+	padding: 5%;
+	padding-bottom: 0%;
+	font-size: 30px;
+	letter-spacing: 1.5px;
+	line-height: 2.0em;
+	color: #fff;
+}
+
+
+/* Defines p within banner class */
+
+
+/* Removes margin, sets padding to 5% so that the heading is floated towards the top left but has some space for readability */
+
+
+/* 18px font size so text is larger than default but smaller than relevent headings. Letter spacing of 1.5px and 2.0em line height increases space between letters so text is easy to read. Text colour set to white */
+
+.banner p {
+	margin: 0%;
+	padding: 5%;
+	font-size: 18px;
+	letter-spacing: 1.5px;
+	line-height: 2.0em;
+	color: #FFFFFF;
+}
+
+
+/* Code for banner-overlay class */
+
+
+/* Changes text to blue with a white background colour to provide contrast due to the banner background being an image. Padding ensures the text has space. */
+
+
+/* Sets opacity to 0.8 so that background image still visable. */
+
+.banner-overlay {
+	background-color: #FFFFFF;
+	opacity: 0.85;
+	color: #264B67;
+	margin-left: 0%;
+	margin-right: 0%;
+	padding: 1%;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	display: inline-block;
+}
+
+
+/* Code for section-top class */
+
+
+/* Sets margin so that the section is not attached to the banner or location section */
+
+
+/* Aligns text left as is industry standard. Sets background colour of class to white and text colour to black to provide a high contrast. */
+
+
+/* Sets padding, letter spacing and line height so text is clearly visable and is not attached to the sides of the class/container */
+
+.section-top {
+	margin: 10px;
+	margin-top: 20px;
+	max-width: 100%;
+	text-align: left;
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 10px 10px 10px;
+	letter-spacing: 1.5px;
+	line-height: 1.5em;
+	display: inline-block;
+}
+
+
+/* Code for Location */
+
+
+/* Creates a container with a margin of 10px and width of 100% to fill the full width of avaliable space for all location sections */
+
+
+/* Vertical align top used to ensure compability on diffrent screen sizes */
+
+div.container {
+	margin: 10px auto;
+	max-width: 100%;
+	text-align: center;
+	vertical-align: top;
+}
+
+
+/* Sets background colour of each location section to white. Sets margin and padding so each location element is seperate and not touching */
+
+
+/* Inline-block display used so that the locations are displayed in rows as opposed to one colunm */
+
+
+/* Sets max-width to 250px so that the text and title have the same width as the location image. Sets height of each element */
+
+
+/* Transition effect used for when a location image is hoverd over for a smooth as opposed to sudden transition effect */
+
+div.location {
+	background-color: #FFFFFF;
+	display: inline-block;
+	margin: 5px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	max-width: 250px;
+	text-align: left;
+	transition: all 0.3s 0s ease-in;
+	height: 615px;
+	vertical-align: top;
+}
+
+
+/* Sets the width of location images to 250px and height to 175px */
+
+div.location img {
+	width: 250px;
+	height: 175px;
+}
+
+
+/* Sets background colour for images and opacity of 0.75 so when hover over the image chages colour */
+
+div.location img:hover {
+	background-color: #264B67;
+	opacity: 0.75;
+}
+
+
+/* Defines text content for location class */
+
+
+/* Sets background colour to white and text colour to black */
+
+
+/* Applies padding of 10px allround along with letter spacing and line height to ensure text is presented in a readable format */
+
+div.location div.location-info {
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 10px 10px 10px;
+	letter-spacing: 1.5px;
+	line-height: 1.5em;
+}
+
+
+/* Defines style for heading 3 (location/destination title) within a location class */
+
+
+/* Sets text colour to dark blue, ensures consistancy */
+
+div.location div.location-info h3 {
+	color: #264B67;
+}
+
+
+/* Code for Button */
+
+
+/* Creates a button class to apply to a tag for link as the html button tag cannot be included within an article */
+
+
+/* Light blue button background colour with white text. Sets padding to 17.5px so that text does not touch the sides. inline-block display used so button does not overflow containing section */
+
+
+/* No text decoration to remove default underlignment. Sets font size to 16px. Aligns text to the center */
+
+.button {
+	background-color: #3F637E;
+	color: #FFFFFF;
+	padding: 17.5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+
+/* Changes the button background colour to dark blue when hoverd over */
+
+.button:hover {
+	background-color: #264B67;
+}
+
+
+/* Code for Media Queries */
+
+
+/* Media query for large screens e.g. Desktop */
+
+@media screen and (min-width: 1200px) {
+	/* Keeps default CSS as defined above */
+}
+
+
+/* Media query for medium screens e.g. Laptop/Tablet */
+
+@media screen and (max-width: 760px) {
+	/* Sets width for navigation lists to 100% to enable vertical navigation */
+	nav li {
+		width: 100%;
+	}
+	/* Sets height of top header so title can fit on smaller screens*/
+	.top-header {
+		height: 7.25em;
+		line-height: 3em;
+	}
+	/* Sets width of main section to 100% thus removing a sidebar for smaller screens*/
+	main {
+		width: 100%;
+	}
+	/* Sets width of aside section to 100% to be displayed under the main seciton as opposed to being a sidebar */
+	/* Defines the bottom margin as 20px so that the aside seciton is disconnected from the footer */
+	aside {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	/* Sets decreased location width and increased height for smaller devices so text fits without need for horizontal scrole */
+	/* Defines an increased bottom margin of 20px so locaiton sections remain seperate on smaller screens */
+	div.location {
+		max-width: 200px;
+		height: 700px;
+		margin-bottom: 20px;
+	}
+	/* Reduces the size/dimensions of location images on smaller screens */
+	div.location img {
+		width: 200px;
+		height: 150px;
+	}
+}
+
+
+/* Media query for small screens e.g. Mobile*/
+
+
+/* Adopts the same media queries as for laptop/tablet devices by default with some additions */
+
+@media screen and (max-width: 550px) {
+	/* Sets height of top header so title can fit on smaller/mobile screens */
+	.top-header {
+		height: 8em;
+		line-height: 2em;
+	}
+}
+
+
+/* ASSESSMENT PART 2 STUFF */
+
+
+/* Code for table, sets 1px solid black border around cells, alignts text left */
+
+table {
+	border-collapse: collapse;
+}
+
+table,
+td,
+th {
+	border: 1px solid black;
+}
+
+th,
+td {
+	text-align: left;
+}
+
+
+/* Validation */
+
+
+/* code for text fields, sets 100% width, padding and a 8px margin. Sets border and its rqadius*/
+
+input[type=text],
+select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+input[type=password],
+select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+/* code for number fields, sets 100% width, padding and a 8px margin. Sets border and its rqadius*/
+
+input[type=number],
+select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+
+/* code for admin form, sets 5px border radicus and a light grey background colour with 20px padding */
+
+form {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+
+/* sets letter and line spacing of fieldset text to 1.5px, to follow house style and maintain consistancy */
+
+fieldset {
+	letter-spacing: 1.5px;
+	line-height: 1.5em;
+}
+
+
+/* code for foem section div, setss margin, width and colours along with letter and line spacing to 1.5px */
+
+.section-form {
+	margin: 10px;
+	margin-top: 20px;
+	max-width: 100%;
+	text-align: left;
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 10px 10px 10px;
+	letter-spacing: 1.5px;
+	line-height: 1.5em;
+}
+
+
+/* code for asterix span, sets text within to red and bold*/
+
+.asterix {
+	color: red;
+	font-weight: bold;
+}

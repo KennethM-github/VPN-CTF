@@ -1,0 +1,87 @@
+/* Code for CSS overide stylesheet to enable page display without 2 column format */
+
+
+/* Code for main, setys width to 100% and float left for 1 column page format */
+
+main {
+	width: 100%;
+	float: left;
+}
+
+
+/* Code for standard text, sets letter spacing and line height to 1.5px to enable consistancy */
+
+p {
+	letter-spacing: 1.5px;
+	line-height: 1.5em;
+}
+
+
+/* Code for table, sets width to 100% and enables consistant letter effects */
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	letter-spacing: 1.5px;
+	line-height: 1.5em;
+}
+
+
+/* Code for th and td, sets text align to left, and padding of 8px. */
+
+th,
+td {
+	text-align: left;
+	padding: 8px;
+	letter-spacing: 1.5px;
+	line-height: 1.5em;
+}
+
+
+/* Code for the th, sets background and text colours, along with letter formatting */
+
+th {
+	background-color: #3F637E;
+	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1.5px;
+	line-height: 1.5em;
+	text-decoration: none;
+	letter-spacing: 1.5px;
+	line-height: 1.5em;
+}
+/* Code for Footer */
+
+
+/* Sets margin of 20px and padding of 25px to ensure Footer is clear at the of the page and not attached to above content with text positioned in the center of the footer. */
+
+
+/* Aligns text within the footer to the center and sets the background colour to light blue in order to follow a house style/ensure consistancy */
+
+
+/* Sets clear to both so that the footer is displayed at the very bottom of the page, under all other content */
+
+footer {
+	margin: 20px;
+	padding: 25px;
+	text-align: center;
+	background-color: #3F637E;
+	clear: both;
+}
+
+
+/* Defines stypes for paragraph text within a footer */
+
+
+/* Sets text colour to white with a font size of 16px, removes all text decoration (i.e bold, underline, italics etc.) */
+
+
+/* Sets padding and margin for footer text, so that the background of footer is not to small */
+
+footer p {
+	color: #ffffff;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 0 10px;
+	margin: 0 10px;
+}
