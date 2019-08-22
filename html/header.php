@@ -20,6 +20,8 @@
         <meta name ="viewport" content="width=device-width, maximum-scale=1.0" />
         <!-- Defines author !-->
         <meta name="author" content="Kenneth McGarry and Joshua Turner" />
+        <!-- icon !-->
+        <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico"/>
         <!-- Links to CSS stylesheet !-->
         <link href="style.css" rel="stylesheet" type="text/css" />
         <!-- Links to CSS overide stylesheet !-->
