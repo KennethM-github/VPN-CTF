@@ -44,7 +44,7 @@
                     <!-- Navigation link !-->
                     <li class="<?php if($page == 'index.php'){ echo ' active';}?>"><a href="index.php" tabindex="1">Home</a> </li>
                     <!-- Navigation link !-->
-                    <li class="<?php if($page == 'download.php'){ echo ' active';}?>"><a href="download.php" tabindex="2">Download</a> </li>
+                    <li class="<?php if($page == 'viewDocker.php'){ echo ' active';}?>"><a href="viewDocker.php" tabindex="2">CTFs</a> </li>
                     <!-- Navigation link !-->
                     <li class="<?php if($page == 'documentation.php'){ echo ' active';}?>"><a href="documentation.php" tabindex="3">Documentation</a> </li>
                     <?php if (isset($_SESSION["username"]))
